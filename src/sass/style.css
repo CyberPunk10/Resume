@@ -171,6 +171,7 @@ h3 {
 #cLeft-main #avatar {
   height: 25rem;
   overflow: hidden;
+  transition: all linear 1s;
 }
 
 #cLeft-main #avatar #photo-ava {
@@ -187,15 +188,16 @@ h3 {
 
 #cLeft-main #avatar h2 {
   font-size: 2.5rem;
-  margin: 15rem 4% 0;
-  color: #c0c0c0;
-  mix-blend-mode: exclusion;
+  margin: 14rem 5% 0;
+  color: #aaa;
+  transition: all linear 1s;
 }
 
 #cLeft-main #avatar p {
-  margin: 19rem 4% 0;
+  margin: 18rem 5% 0;
   font-size: 1.5rem;
   color: #888;
+  transition: all linear 1s;
 }
 
 #cLeft-main #avatar #photoSvg {
@@ -542,15 +544,75 @@ h3 {
   fill: #cbcccb;
 }
 
-@media screen and (min-width: 478px) {
-  body {
-    background-color: yellow;
+@media screen and (min-width: 420px) {
+  #cLeft-main #avatar #photo-ava {
+    height: auto;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #cLeft-main #avatar {
+    height: 30rem;
+  }
+  #cLeft-main #avatar h2 {
+    margin: 16rem 4% 0;
+    font-size: 3rem;
+  }
+  #cLeft-main #avatar p {
+    margin: 21rem 4% 0;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #cLeft-main #avatar {
+    height: 33rem;
+  }
+  #cLeft-main #avatar h2 {
+    margin: 19rem 4% 0;
+    font-size: 3rem;
+  }
+  #cLeft-main #avatar p {
+    margin: 24rem 4% 0;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: pink;
+  #cLeft-main .decor-cLeft .line-first {
+    display: block;
+  }
+  #cLeft-main #avatar {
+    margin-bottom: 2px;
+  }
+  #cLeft-main #avatar:hover #photo-ava {
+    width: 100vw;
+    height: auto;
+  }
+  #cLeft-main #avatar #photo-ava {
+    height: auto;
+    width: 100vw;
+  }
+  #cLeft-main #avatar h2 {
+    margin: 15rem 4% 0;
+    color: #c0c0c0;
+    mix-blend-mode: exclusion;
+  }
+  #cLeft-main #avatar p {
+    margin: 20rem 4% 0;
+    color: #777;
+  }
+  #cLeft-main #avatar #photoSvg {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    width: 157.5%;
+    fill: #ebecee;
+  }
+  #cLeft-main #avatar #photoSvgMobile {
+    display: none;
   }
 }
 
