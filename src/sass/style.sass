@@ -10,6 +10,9 @@ $color-bg: #3f3935
 $color-bg-cLeft: #ebecee
 $color-bg-cBottom: #555
 $color-svg-gray: #aaa
+$height-footer-media768: 5rem
+$height-avatar-media768: 30rem
+$height-contact-media768: 20rem
 
 html
   font-size: 10px
@@ -54,7 +57,6 @@ h3
   .wrap-block-content
     height: 100%
     display: flex
-    align-items: center
     justify-content: center
     margin: 2rem 1rem 0rem
   #avatar                                                   // Photo-block
@@ -192,8 +194,14 @@ h3
   // padding: 2rem
   // overflow-y: auto
   h3
-    margin-top: 1rem
-    margin-bottom: 0
+    margin: 0
+  h4
+    color: $color-main
+    letter-spacing: .5px
+
+  p
+    line-height: 1.8
+    letter-spacing: .3px
   .block
     display: flex
     flex-direction: column
@@ -202,23 +210,23 @@ h3
     padding: 4rem 1.5rem 1.5rem
     &:first-child
       padding-top: 3rem
-    .skills
+  .skills
+    width: 100%
+    .flex-skill
+      display: flex
+      align-items: center
+      // max-width: 50%
       width: 100%
-      .flex-skill
-        display: flex
-        align-items: center
-        // max-width: 50%
-        width: 100%
-        line-height: 2rem
-        p
-          width: 40%
-          margin: 0
-          padding: 0 1rem 0 0
-          font-size: 1.2rem
-          text-align: right
-          letter-spacing: .5px
-        .progress
-          width: 60%
+      line-height: 2rem
+      p
+        width: 40%
+        margin: 0
+        padding: 0 1rem 0 0
+        font-size: 1.2rem
+        text-align: right
+        letter-spacing: .5px
+      .progress
+        width: 60%
 
   .flex-wrapper                                             // заголовок с иконкой
     display: flex
@@ -244,11 +252,6 @@ h3
     svg
       transform: rotate(45deg)
       fill: #fff
-
-  #education
-    p
-      line-height: 1.8
-      letter-spacing: .3px
   .hobbies
     display: flex
     justify-content: space-around
@@ -398,6 +401,10 @@ h3
     #photoSvgMobile-footer
       transform: translateY(calc(-100% + 7.2rem))
 
+  #cRight
+    .wrap-skills-flex
+      display: flex
+
 
 @media screen and  (min-width: 650px)
   #cLeft-main
@@ -414,33 +421,44 @@ h3
 
 
 @media screen and  (min-width: 768px)
+
+  body
+    max-height: 100vh
+
   .grid-container-1
-    grid-template: repeat(3, auto)/ 35% 65%
+    grid-template: calc(100vh - 12.5rem - #{$height-footer-media768}) 12.5rem #{$height-footer-media768}/ 35% 65%
+    
 
   #cLeft-main
     // position: relative    // для .photo (аватар)
-    grid-column: 1; 
-    grid-row: 1;
+    grid-column: 1
+    grid-row: 1
     padding-bottom: 0
-    #avatar                                                 // Photo-block
+    #avatar  
+      height: $height-avatar-media768                                       // Photo-block
       #photo-ava
-        width: 200%
+        width: 54rem
         transition: all linear 1s
       #photoSvgMobile-header
-        bottom: 2rem
+        bottom: -1px
       h2
-        margin-top: 22rem
+        margin-top: 20rem
         font-size: 2.5rem
       p
-        margin-top: 25rem
+        margin-top: 24rem
         font-size: 1.5rem
-     
-
+    #profile
+      height: calc(100vh - #{$height-avatar-media768} - #{$height-contact-media768} - 12.5rem - #{$height-footer-media768})
+      .wrap-block-content
+        height: calc(100vh - #{$height-avatar-media768} - #{$height-contact-media768} - 12.5rem - #{$height-footer-media768} - 5.5rem)
+        overflow-y: auto
+    #contact
+      height: $height-contact-media768
   #cLeft-social-page
     position: relative    // для .triangle (треугольника) & .photo (аватар)
     order: 0
-    grid-column: 1; 
-    grid-row: 2/3;
+    grid-column: 1
+    grid-row: 2/3
     color: #444
     background-color: $color-bg-cLeft      
     .block
@@ -465,16 +483,22 @@ h3
     #photoSvgMobile-footer
       display: none
 
-        
 
   #cRight
-    grid-column: 2; 
-    grid-row: 1/3;
+    grid-column: 2
+    grid-row: 1/3
+    max-height: calc(100vh - #{$height-footer-media768})
+    overflow-y: auto
+
+    
 
   #cBottom
     order: 0
-    grid-column: 1/3; 
-    grid-row: 3/4;
+    grid-column: 1/3
+    grid-row: 3/4
+    &:before
+      height: 0
+      top: 0
 
 @media screen and (min-width: 991px)
   body
