@@ -10254,10 +10254,131 @@ try {
 /*!*******************!*\
   !*** ./js/app.js ***!
   \*******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ../node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\src\\js\\app.js: Legacy octal literals are not allowed in strict mode (135:36)\n\n\u001b[0m \u001b[90m 133 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 134 | \u001b[39m  let nowDate \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDate\u001b[39m()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 | \u001b[39m  let date1990 \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDate\u001b[39m(\u001b[35m1990\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m\u001b[33m,\u001b[39m \u001b[35m08\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     | \u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 136 | \u001b[39m  let diff \u001b[33m=\u001b[39m nowDate \u001b[33m-\u001b[39m date1990\u001b[0m\n\u001b[0m \u001b[90m 137 | \u001b[39m  let years \u001b[33m=\u001b[39m \u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mfloor(diff \u001b[33m/\u001b[39m (\u001b[35m1000\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m24\u001b[39m \u001b[33m*\u001b[39m \u001b[35m361\u001b[39m))\u001b[0m\n\u001b[0m \u001b[90m 138 | \u001b[39m  \u001b[36mconst\u001b[39m yearsMe \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m'years-me'\u001b[39m)\u001b[0m\n    at Parser._raise (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:742:17)\n    at Parser.raiseWithData (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:735:17)\n    at Parser.raise (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:729:17)\n    at Parser.readNumber (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:8286:14)\n    at Parser.getTokenFromCode (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:8039:14)\n    at Parser.nextToken (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:7571:12)\n    at Parser.next (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:7499:10)\n    at Parser.eat (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:7504:12)\n    at Parser.expect (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:8765:10)\n    at Parser.parseExprList (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10702:14)\n    at Parser.parseNewArguments (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10332:25)\n    at Parser.parseNew (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10326:10)\n    at Parser.parseExprAtom (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10034:21)\n    at Parser.parseExprSubscripts (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9624:23)\n    at Parser.parseMaybeUnary (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9604:21)\n    at Parser.parseExprOps (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9474:23)\n    at Parser.parseMaybeConditional (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9447:23)\n    at Parser.parseMaybeAssign (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9402:21)\n    at Parser.parseVar (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11763:26)\n    at Parser.parseVarStatement (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11572:10)\n    at Parser.parseStatementContent (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11171:21)\n    at Parser.parseStatement (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11104:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11679:25)\n    at Parser.parseBlockBody (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11665:10)\n    at Parser.parseBlock (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11649:10)\n    at Parser.parseFunctionBody (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10656:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10639:10)\n    at C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11819:12\n    at Parser.withTopicForbiddingContext (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10979:14)\n    at Parser.parseFunction (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:11818:10)\n    at Parser.parseFunctionExpression (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10115:17)\n    at Parser.parseExprAtom (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:10023:21)\n    at Parser.parseExprSubscripts (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9624:23)\n    at Parser.parseMaybeUnary (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9604:21)\n    at Parser.parseExprOps (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9474:23)\n    at Parser.parseMaybeConditional (C:\\CYBERPUNK\\MEGAsync\\Projects\\Resume\\node_modules\\@babel\\parser\\lib\\index.js:9447:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ "./js/hello.js");
+ // hello('Konstantin');
+// _progress.scss
+// 
+// function random(min, max) {
+//   var rand = min + Math.random() * (max + 1 - min);
+//   rand = Math.floor(rand);
+//   return rand;
+// }
+// 
+// setTimeout(function () {
+//   document.querySelector('progress').value = random(10, 100);
+// }, 0);
+
+window.onload = function () {
+  // Страница загружена
+  var userAgent = navigator.userAgent.toLowerCase();
+  var Mozila = /firefox/.test(userAgent);
+  var Chrome = /chrome/.test(userAgent);
+  var Safari = /safari/.test(userAgent);
+  var Opera = /opera/.test(userAgent);
+  var InternetExplorer = false;
+  if (/mozilla/.test(userAgent) && !/firefox/.test(userAgent) && !/chrome/.test(userAgent) && !/safari/.test(userAgent) && !/opera/.test(userAgent) || /msie/.test(userAgent)) InternetExplorer = true; //console.log(Mozila, Chrome, Safari, Opera, InternetExplorer)
+  // ava-photo-svg
+
+  (function () {
+    var avatar = document.querySelector('#avatar'),
+        photoSvg_path = avatar.querySelector('#photoSvg_path');
+    var line = document.querySelector('.line');
+
+    if (Mozila) {
+      // анимация будет постоянна и не интерактивна для Mozila
+      photoSvg_path.innerHTML = "\n      <animate attributeName=\"d\" dur=\"100000ms\" repeatCount=\"indefinite\" fill=\"freeze\" calcMode=\"linear\"\n        restart=\"whenNotActive\" keyTimes=\"0; 0.3; 0.5; 0.55; 0.7; 1\"\n        values=\"M0.499981 343L0.499969 417.999H857L567 0.000610352L544 0.000778198C300 0.000686646 403 175 279 295C155 415 28 351.607 0.499981 343Z;\n        M0.499981 343L0.499969 417.999H857L567 0.000610352L544 0.000778198C685 528 450 285 304 343C158 401 203 256 0.499981 343Z;\n        M0.500031 399.499L0.500042 418.001H545.499L567 0L857 369.499C433.5 436 352.5 372.001 275.5 372.001C198.5 372.001 199.5 399.499 0.500031 399.499Z;\n        M0.500031 399.499L0.500042 418.001H545.499L567 0L857 369.499C433.5 436 352.5 372.001 275.5 372.001C198.5 372.001 199.5 399.499 0.500031 399.499Z;\n        M0.499981 343L0.499969 417.999H857L567 0.000610352L544 0.000778198C685 528 450 285 304 343C158 401 203 256 0.499981 343Z;\n        M0.499981 343L0.499969 417.999H857L567 0.000610352L544 0.000778198C300 0.000686646 403 175 279 295C155 415 28 351.607 0.499981 343Z\">\n      </animate>";
+    } else {
+      // для Chrome (и других, кто может) анимация будет при наведении и уходе (эмуляция hover)
+      // блок #avatar под курсором в данный момент (если есть)
+      var currentElem = null;
+
+      avatar.onmouseover = function (event) {
+        // перед тем, как войти на следующий элемент, курсор всегда покидает предыдущий
+        // если currentElem есть, то мы ещё не ушли с предыдущего (#avatar),
+        // это переход внутри - игнорируем такое событие
+        if (currentElem) return;
+        var target = event.target.closest('#avatar'); // переход не на <#avatar> - игнорировать
+
+        if (!target) return; // переход на #avatar
+        // ура, мы зашли на новый <td>
+
+        currentElem = target;
+        transformAnimateOver();
+      };
+
+      function transformAnimateOver() {
+        var d = photoSvg_path.getAttribute('d'); // обновляем путь, чтобы анимация не скакала
+
+        photoSvg_path.setAttribute('d', d);
+        photoSvg_path.innerHTML = "\n        <animate attributeName=\"d\" dur=\"1000ms\" repeatCount=\"1\" fill=\"freeze\" calcMode=\"linear\"\n          restart=\"whenNotActive\" begin=\"indefinite\"\n          values=\"".concat(d, ";\n          M0.500031 399.499L0.500042 418.001H545.499L567 0L857 369.499C433.5 436 352.5 372.001 275.5 372.001C198.5 372.001 199.5 399.499 0.500031 399.499Z;\">\n        </animate>");
+        document.querySelector('#photoSvg_path > animate').beginElement();
+        /* метод запускает анимацию */
+
+        line.style.opacity = '0';
+      }
+
+      avatar.onmouseout = function (event) {
+        // если мы вне (#avatar), то игнорируем уход мыши
+        // это какой-то переход внутри таблицы, но вне <td>,
+        // например с <tr> на другой <tr>
+        if (!currentElem) return; // мы покидаем элемент – но куда? Возможно, на потомка?
+
+        var relatedTarget = event.relatedTarget;
+
+        while (relatedTarget) {
+          // поднимаемся по дереву элементов и проверяем – внутри ли мы currentElem или нет
+          // если да, то это переход внутри элемента – игнорируем
+          if (relatedTarget == currentElem) return;
+          relatedTarget = relatedTarget.parentNode;
+        } // мы действительно покинули элемент
+
+
+        currentElem = null;
+        transformAnimateOut();
+      };
+
+      function transformAnimateOut() {
+        var d = photoSvg_path.getAttribute('d'); // обновляем путь, чтобы анимация не скакала
+
+        photoSvg_path.setAttribute('d', d);
+        photoSvg_path.innerHTML = "\n        <animate attributeName=\"d\" dur=\"1000ms\" repeatCount=\"1\" fill=\"freeze\" calcMode=\"linear\"\n          restart=\"whenNotActive\" begin=\"indefinite\"\n          values=\"".concat(d, ";\n          M0.49995 343L0.499939 417.999H857L567 0.000488281L544 0.000656128C300 0.000564575 403 175 279 295C155 415 28 351.607 0.49995 343Z;\">\n        </animate>");
+        document.querySelector('#photoSvg_path > animate').beginElement();
+        /* метод запускает анимацию */
+
+        line.style.opacity = '';
+      }
+    }
+  })();
+
+  var nowDate = new Date();
+  var date1990 = new Date(1990, 10, 8);
+  var diff = nowDate - date1990;
+  var years = Math.floor(diff / (1000 * 60 * 60 * 24 * 361));
+  var yearsMe = document.getElementById('years-me');
+  yearsMe.innerText = years;
+};
+
+/***/ }),
+
+/***/ "./js/hello.js":
+/*!*********************!*\
+  !*** ./js/hello.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return hello; });
+function hello(name) {
+  console.log("Hello, ".concat(name));
+  console.log("".concat(name, " - coder"));
+}
 
 /***/ }),
 

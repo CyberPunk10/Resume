@@ -132,7 +132,7 @@ window.onload = function () {        // Страница загружена
   ));
 
   let nowDate = new Date()
-  let date1990 = new Date(1990, 10, 08)
+  let date1990 = new Date(1990, 10, 8)
   let diff = nowDate - date1990
   let years = Math.floor(diff / (1000 * 60 * 60 * 24 * 361))
   const yearsMe = document.getElementById('years-me')

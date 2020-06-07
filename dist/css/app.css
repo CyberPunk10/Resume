@@ -113,6 +113,9 @@ h3 {
   font-weight: 700;
   font-size: 1.8rem; }
 
+.wrap-flex {
+  display: flex; }
+
 .grid-container-1 {
   display: grid;
   grid-template: repeat(4, auto)/auto; }
@@ -393,14 +396,14 @@ h3 {
     color: #a4a6a5;
     padding-top: 0.2rem;
     transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1); }
-  #cBottom svg {
-    fill: #a4a6a5;
-    padding-right: 1rem;
-    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1); }
-    #cBottom svg:hover {
+    #cBottom .contact-link:hover {
       color: #cbcccb; }
-    #cBottom svg:hover svg {
+    #cBottom .contact-link:hover svg {
       fill: #cbcccb; }
+    #cBottom .contact-link svg {
+      fill: #a4a6a5;
+      padding-right: 1rem;
+      transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 @media screen and (min-width: 420px) {
   #cLeft-main #avatar #photoSvgMobile-header {
